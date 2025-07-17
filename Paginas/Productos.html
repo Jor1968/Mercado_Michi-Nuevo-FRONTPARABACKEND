@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<title> Productos</title>
+<link rel="icon" href="../Imagenes/michi1.ico">
+
+
+
+<meta charset="UTF-8">
+<link rel="stylesheet" href="../Style\style.css">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+</head>
+
+
+
+
+<body class="bgDefault">
+
+
+
+<!-- 
+    <nav>
+        <li class="flex-container-row" >
+            <ul class="rowItem"><a href="https://jor1968.github.io/Mercado_Michi/index.html" > Inicio</a></ul>
+            <ul class="rowItem"><a href="https://jor1968.github.io/Mercado_Michi/Paginas/Productos.html" > Productos</a></ul>
+            <ul class="rowItem"><a href="https://jor1968.github.io/Mercado_Michi/Paginas/Reseñas.html" > Reseñas</a></ul>
+            <ul class="rowItem"><a href="https://jor1968.github.io/Mercado_Michi/Paginas/Compraros.html"> Contactos</a></ul>
+    
+        </li>
+    
+    
+    
+    </nav> -->
+
+
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="https://jor1968.github.io/Mercado_Michi-Nuevo-FRONTPARABACKEND/index.html">Inicio</a>
+          </div>
+          <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+              <li class="active"><a href="https://jor1968.github.io/Mercado_Michi-Nuevo-FRONTPARABACKEND/Paginas/Productos.html">Productos</a></li>
+              <li><a href="https://jor1968.github.io/Mercado_Michi-Nuevo-FRONTPARABACKEND/Paginas/Reseñas.html">Reseñas</a></li>
+              <li><a href="https://jor1968.github.io/Mercado_Michi-Nuevo-FRONTPARABACKEND/Paginas/Contactos.html">Contactos</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav> 
+
+
+
+    
+    <header>
+        <h1 >
+
+            <p onclick="goToURL('https://jor1968.github.io/Mercado_Michi-Nuevo-FRONTPARABACKEND/index.html')" class="flex-container-row-title">
+
+                <span class="italianno-regular">CATALOGO DE GATOS</span>
+
+
+            </p>
+           
+
+        </h1>
+
+
+
+
+        
+
+    </header>
+    
+    
+    
+    <main class="flex-container">
+
+
+ 
+
+
+
+      <div id="checkout-modal">
+        <div class="checkout-content">
+            <h2>Finalizar Compra</h2>
+            <p>Subtotal: $<span id="modal-subtotal">0</span></p>
+            <p>Descuento: $<span id="modal-descuento">0</span></p>
+            <p>IVA: $<span id="modal-iva">0</span></p>
+            <p><strong>Total a Pagar: $<span id="modal-total">0</span></strong></p>
+            <button onclick="realizarCompra()">Confirmar Compra</button>
+            <button onclick="cerrarCheckout()">Cancelar</button>
+        </div>
+    </div>
+
+
+    
+        <div class="tarjeta">
+
+          <div id="carrito">
+
+            <p class="colorAnim"> CALIDAD 100%</p>
+
+            <h2>Carrito de Compras</h2>
+            
+            <ul id="lista-carrito"></ul>
+            <p>Subtotal: $<span id="subtotal-carrito"> 0</span></p>
+            <p>Descuento: $<span id="descuento-carrito"> 0</span></p>
+            <p>IVA (21%): $<span id="iva-carrito"> 0</span></p>
+            <p><strong>Total: $<span id="total-carrito"> 0</span></strong></p>
+            
+            <button onclick="vaciarCarrito()" id="vaciar-carrito" >Vaciar Carrito</button>
+            <button onclick="mostrarCheckout()" id="mostrarCheckout" >Checkout</button>
+            
+            </div>
+
+        </div>
+
+        <div id ="TarjetasGatos">
+
+
+
+        </div>
+
+    </main>
+    
+    
+    
+    <footer class="flex-container-row-bottom">
+        <p> WHOAH 1995 TM, Direccion: Segurola y Habana 4310 7mo piso </p>
+    </footer>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<script src="../JS/app.js"></script>
+    
+    </body>
+    
+    </html>

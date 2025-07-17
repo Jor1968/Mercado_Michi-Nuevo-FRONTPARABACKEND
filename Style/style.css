@@ -1,0 +1,362 @@
+@import url('https://fonts.googleapis.com/css?family=Italianno&display=swap');
+
+
+*{
+  box-sizing: border-box;
+}
+
+nav{
+  display:flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  color: rgb(255, 40, 40);
+  background: repeating-linear-gradient(rgba(70, 68, 68, 0.527) 0% 49%, rgba(0, 0, 0, 0.507) 51% 100%);
+} 
+
+header{
+  background-color: rgba(233, 235, 255, 0.123);
+  padding: 0.1rem;
+
+
+}
+
+
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(230, 123, 36, 0.199);
+  height: auto;
+  justify-content: center;
+  align-items: center;
+  max-height:100%;
+  max-width:100%;
+  opacity: 100%;
+  
+
+}
+
+.flex-container-row {
+  display: flex;
+  flex-direction: row;
+  background-color: rgba(255, 255, 255, 0);
+  height: auto;
+  max-height:100%;
+  max-width:100%;
+  
+
+}
+
+
+.flex-container-row-bottom {
+  display: flex;
+  flex-direction: row;
+  background-color: rgba(255, 0, 0, 0.76);
+  height: auto;
+  max-height:100%;
+  max-width:100%;
+  
+
+}
+
+.flex-container-row-title {
+  display: flex;
+  flex-direction: row;
+  color: rgba(117, 29, 29, 0.774);
+  justify-content: center;
+  background: transparent;
+  font-size: 6.5rem;
+
+  
+
+}
+
+.italianno-regular {
+  font-family: "Italianno", cursive;
+  font-size: 6.5rem;
+  font-weight: 1000;
+  background-color: red;
+  background: radial-gradient(rgba(255, 94, 0, 0.527) 0% 49%, rgba(0, 0, 0, 0.507) 51% 100%);
+}
+
+.italianno-blanco {
+  font-family: "Italianno", cursive;
+  font-size: 2.0rem;
+  font-weight: 1000;
+  color: rgb(255, 255, 255);
+  background-color: rgb(0, 0, 0);
+  margin: 5px;
+  padding: 5px;
+  max-height:100%;
+  max-width:100%;
+  overflow:auto;
+  
+  
+  }
+
+button:hover{
+  background-color: rgb(248, 187, 187);
+}
+
+
+
+.bg{
+  background-color: transparent rgb(121, 121, 121);
+
+  background-image: url("../Imagenes/Potemkin.jpg");
+  opacity: 100%;
+  width: 100%;
+  max-width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size:contain;
+  background-attachment: scroll;
+}
+
+.bgDefault{
+
+  background: rgb(238,174,202);
+  background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,163,233,1) 100%);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-attachment: fixed;
+
+  
+}
+
+.flex-container > img {
+  background-color: #f1f1f1;
+  margin: 6rem;
+  padding: 6rem;
+  font-size: 30px;
+  max-height:100%;
+  max-width:100%;
+  overflow:auto;
+}
+
+
+.flex-container-row > .tarjeta {
+  background: rgb(238,174,202);
+  background-color: rgba(112, 98, 98, 0.747);
+  margin: 5px;
+  padding: 5px;
+  font-size: 0.8rem;
+  max-height:100%;
+  max-width:100%;
+  overflow:auto;
+}
+
+
+
+
+
+
+
+
+
+.flex-container > video {
+  background-color: #f1f1f1;
+  margin: 10px;
+  padding: 20px;
+  font-size: 30px;
+  max-height:100%;
+  max-width:100%;
+  overflow:auto;
+}
+.rowItem{
+  background: rgb(238,174,202);
+  background-color: rgba(112, 98, 98, 0.747);
+  margin: 5px;
+  padding: 5px;
+  font-size: 0.8rem;
+  max-height:100%;
+  max-width:100%;
+  overflow:auto;
+
+
+}
+
+
+
+.flex-container-row > img {
+  background-color: #f1f1f1;
+  margin: 10px;
+  padding: 20px;
+  font-size: 30px;
+  max-height:100%;
+  max-width:100%;
+  overflow:auto;
+}
+
+.flex-container-row > video {
+  background-color: #f1f1f1;
+  margin: 10px;
+  padding: 20px;
+  font-size: 30px;
+  max-height:100%;
+  max-width:100%;
+  overflow:auto;
+}
+
+.tarjeta {
+  background: rgb(238,174,202);
+  background-color: rgba(112, 98, 98, 0.747);
+  margin: 1rem;
+  padding: 1rem;
+  font-size: 1.2rem;
+  max-height:100%;
+  max-width:100%;
+  overflow:auto;
+}
+
+.tarjeta > img{
+  background-color: #000000;
+  margin: 0.5rem;
+  padding: 0.5rem;
+  max-height:100%;
+  max-width:100%;
+  height: auto;
+  width: auto;
+  overflow:auto;
+
+}
+
+.tarjetaFlex {
+  display: flex;
+  flex-direction: column;
+  background: rgb(238,174,202);
+  background-color: rgba(112, 98, 98, 0.747);
+  font-size: 1.2rem;
+  max-height:100%;
+  max-width:100%;
+  overflow:auto;
+}
+
+.tarjetaFlex > img{
+  background-color: #000000;
+  margin: 0.5rem;
+  padding: 0.5rem;
+  max-height:100%;
+  max-width:100%;
+  height: auto;
+  width: auto;
+  overflow:auto;
+
+}
+
+
+.tarjetas{
+  max-width: 100%;
+  max-height:100%;
+  width: auto;
+  margin: 2rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+
+}
+.Formulario{
+  background-color: rgba(127, 255, 212, 0.466);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  border: 4rem;
+  padding: 4rem;
+  font-size: 2rem;
+  font-weight: 2rem;
+  
+
+
+}
+.Formulario > * > textarea{
+  resize: none 
+
+}
+
+footer{
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: red;
+  color: white;
+  text-align: center;
+
+}
+
+#checkout-modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.5);
+  justify-content: center;
+  align-items: center;
+}
+.checkout-content {
+  background-color: rgb(240, 129, 129);
+  padding: 20px;
+  border-radius: 10px;
+  width: 300px;
+}
+
+@media (min-width: 300px) {
+  .tarjetas {grid-template-columns: repeat(1, 1fr)}
+  .Formulario{
+    font-size: 1rem;
+    font-weight: 1rem;}
+    .italianno-regular {
+      font-size: 2.5rem;
+    }
+
+
+
+  
+}
+
+
+@media (min-width: 800px) {
+  .tarjetas{
+    grid-template-columns: repeat(4, 1fr);}
+    .Formulario{
+      font-size: 2rem;
+      font-weight: 2rem;}
+      .italianno-regular {
+        font-size: 6.5rem;
+      }
+}
+
+
+.colorAnim{
+font-family:'MS Comic Sans';
+width: auto;
+height: auto;
+font-size: 200%;
+background-color: rgb(0, 0, 0);
+opacity: 75%;
+animation-name: example;
+animation-duration: 4s;
+animation-name: anim;
+animation-duration: 5;
+animation-iteration-count: infinite;
+
+}
+
+
+
+
+
+
+@keyframes anim {
+  25% {
+    color: #9d00bd;
+  }
+  50% {
+    color: #FF7A59;
+  }
+  75% {
+    color: #fff238d5;
+}
+}
