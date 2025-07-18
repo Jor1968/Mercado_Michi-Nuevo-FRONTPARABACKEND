@@ -9,14 +9,14 @@
 
 var verdadMostrada = false;
 
-var articulos;
+var productos;
 
 
-fetchArticulos(articulos);
+fetchArticulos();
 
 
 console.log("a ver ahora");
-console.log(articulos);
+console.log(productos);
 
 
 
@@ -24,7 +24,7 @@ console.log(articulos);
 let htmlCode = "";
 
 
-articulos.forEach(gatoIndividual => {
+productos.forEach(gatoIndividual => {
   htmlCode =
     htmlCode +
     `
@@ -356,7 +356,7 @@ function catDispenser() {
 }
 
 
-async function fetchArticulos(productoslista){
+async function fetchArticulos(){
 
 
 
@@ -368,7 +368,6 @@ async function fetchArticulos(productoslista){
             throw new Error("No se pudo hacer el fetch");
         }
         const data = await response.json();
-        productoslista = data;
         console.log(productos);
         console.log("HASTA ACA LLEGA");
 
