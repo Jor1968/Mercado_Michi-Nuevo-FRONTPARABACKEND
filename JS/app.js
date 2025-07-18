@@ -12,11 +12,11 @@ var verdadMostrada = false;
 var articulos;
 
 
-fetchArticulos(productos);
+fetchArticulos(articulos);
 
 
 console.log("a ver ahora");
-console.log(productos);
+console.log(articulos);
 
 
 
