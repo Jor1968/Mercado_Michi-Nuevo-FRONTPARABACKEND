@@ -34,7 +34,7 @@ fetchArticulos();
 
 
 
-
+console.log(productos);
 
 let htmlCode = "";
 
