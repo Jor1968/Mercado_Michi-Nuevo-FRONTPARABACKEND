@@ -9,28 +9,22 @@
 
 var verdadMostrada = false;
 
-
-
 var productos;
 
-fetch('http://localhost:9090/api/Articulos')
-  .then(res => res.json())
-  .then(data => {
-    productos = data;
-   })
-  .then(() => {
-    console.log(data);
-   });
+
+fetchArticulos(productos);
 
 
-
-
+console.log("a ver ahora");
 console.log(productos);
+
+
+
 
 let htmlCode = "";
 
 
-productos.forEach(gatoIndividual => {
+articulos.forEach(gatoIndividual => {
   htmlCode =
     htmlCode +
     `
@@ -67,6 +61,8 @@ if (localStorage.getItem("carritoStorage") === null) {
 
 
 document.addEventListener('DOMContentLoaded', cargarCarrito);
+
+
 
 
 var campos = document.querySelectorAll("label > textarea , label > input");
@@ -360,7 +356,27 @@ function catDispenser() {
 }
 
 
+async function fetchArticulos(productoslista){
 
+
+
+    try{
+        const response = await fetch('http://localhost:9090/api/Articulos');
+
+
+        if(!response.ok){
+            throw new Error("No se pudo hacer el fetch");
+        }
+        const data = await response.json();
+        productoslista = data;
+        console.log(productos);
+        console.log("HASTA ACA LLEGA");
+
+    }
+    catch(error){
+        console.error(error);
+    }
+}
 
 
         
