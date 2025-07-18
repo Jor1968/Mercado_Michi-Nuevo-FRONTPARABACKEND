@@ -367,7 +367,7 @@ async function fetchArticulos(){
         if(!response.ok){
             throw new Error("No se pudo hacer el fetch");
         }
-        const data = await response.json();
+        productos = await response.json();
         console.log(productos);
         console.log("HASTA ACA LLEGA");
 
