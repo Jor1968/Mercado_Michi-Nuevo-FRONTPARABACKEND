@@ -13,7 +13,7 @@ var verdadMostrada = false;z
 
 var productos;
 
-fetch('http://localhost:9090/Articulos')
+fetch('http://localhost:9090/api/Articulos')
   .then(res => res.json())
   .then(data => {
     productos = data;
