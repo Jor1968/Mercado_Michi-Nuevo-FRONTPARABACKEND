@@ -30,7 +30,7 @@ console.log(productos);
 let htmlCode = "";
 
 
-articulos.forEach(gatoIndividual => {
+productos.forEach(gatoIndividual => {
   htmlCode =
     htmlCode +
     `
