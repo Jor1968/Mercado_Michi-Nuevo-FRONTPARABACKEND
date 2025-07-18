@@ -7,7 +7,7 @@
 
 //let nombre = prompt("ingrese un nombre");
 
-var verdadMostrada = false;z
+var verdadMostrada = false;
 
 
 
