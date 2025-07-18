@@ -24,6 +24,7 @@ async function fetchArticulos(){
         
         productos = await response.json();
         console.log(productos);
+        console.log("HASTA ACA LLEGA");
 
     }
     catch(error){
@@ -31,6 +32,7 @@ async function fetchArticulos(){
     }
 }
 fetchArticulos();
+console.log("a ver ahora");
 
 
 
