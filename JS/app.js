@@ -69,8 +69,6 @@ if (localStorage.getItem("carritoStorage") === null) {
 document.addEventListener('DOMContentLoaded', cargarCarrito);
 
 
-
-
 var campos = document.querySelectorAll("label > textarea , label > input");
 chequearCamposLlenos(campos);
 
