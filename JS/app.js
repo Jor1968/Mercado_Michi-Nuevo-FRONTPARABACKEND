@@ -9,7 +9,7 @@
 
 var verdadMostrada = false;
 
-let productos = ["error"];
+
 
 async function fetchArticulos(){
 
@@ -21,7 +21,7 @@ async function fetchArticulos(){
         if(!response.ok){
             throw new Error("No se pudo hacer el fetch");
         }
-        
+        const productos = ["error"];
         productos = await response.json();
         console.log(productos);
         console.log("HASTA ACA LLEGA");
@@ -32,7 +32,7 @@ async function fetchArticulos(){
         console.error(error);
     }
 }
-productos = fetchArticulos();
+var articulos = fetchArticulos();
 console.log("a ver ahora");
 
 
@@ -42,7 +42,7 @@ console.log(productos);
 let htmlCode = "";
 
 
-productos.forEach(gatoIndividual => {
+articulos.forEach(gatoIndividual => {
   htmlCode =
     htmlCode +
     `
