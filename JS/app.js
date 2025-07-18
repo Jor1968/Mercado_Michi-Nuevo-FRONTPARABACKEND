@@ -19,7 +19,7 @@ fetch('http://localhost:9090/api/Articulos')
     productos = data;
    })
   .then(() => {
-    console.log(obj);
+    console.log(data);
    });
 
 
