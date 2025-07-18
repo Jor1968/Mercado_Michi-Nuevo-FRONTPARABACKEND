@@ -361,13 +361,14 @@ async function fetchArticulos(){
 
 
     try{
-        const response = await fetch('http://localhost:9090/api/Articulos');
+        const response = await fetch('http://localhost:9090/api/Articulos')
+        .then(res => {productos = res.json()});
 
 
         if(!response.ok){
             throw new Error("No se pudo hacer el fetch");
         }
-        productos = await response.json();
+
         console.log(productos);
         console.log("HASTA ACA LLEGA");
         return productos;
