@@ -9,7 +9,7 @@
 
 var verdadMostrada = false;
 
-var productos;
+var articulos;
 
 
 fetchArticulos(productos);
