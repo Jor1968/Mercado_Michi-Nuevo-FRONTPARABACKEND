@@ -7,33 +7,21 @@
 
 //let nombre = prompt("ingrese un nombre");
 
-var verdadMostrada = false;
+var verdadMostrada = false;z
 
 
 
-async function fetchArticulos(){
+var productos;
 
+fetch('http://localhost:9090/Articulos')
+  .then(res => res.json())
+  .then(data => {
+    productos = data;
+   })
+  .then(() => {
+    console.log(obj);
+   });
 
-
-    try{
-        const response = await fetch('http://localhost:9090/api/Articulos');
-
-        if(!response.ok){
-            throw new Error("No se pudo hacer el fetch");
-        }
-        const productos = ["error"];
-        productos = await response.json();
-        console.log(productos);
-        console.log("HASTA ACA LLEGA");
-        return productos;
-
-    }
-    catch(error){
-        console.error(error);
-    }
-}
-var articulos = fetchArticulos();
-console.log("a ver ahora");
 
 
 
