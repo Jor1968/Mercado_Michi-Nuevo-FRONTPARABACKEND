@@ -25,13 +25,14 @@ async function fetchArticulos(){
         productos = await response.json();
         console.log(productos);
         console.log("HASTA ACA LLEGA");
+        return productos;
 
     }
     catch(error){
         console.error(error);
     }
 }
-fetchArticulos();
+productos = fetchArticulos();
 console.log("a ver ahora");
 
 
