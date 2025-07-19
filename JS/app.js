@@ -7,12 +7,29 @@
 
 //let nombre = prompt("ingrese un nombre");
 
+productos2 = [
+     { 
+        id: 'GatoArgentino',
+        nombre: 'Gato Argentino',
+        categoria: 'tranquilos',
+        descripcion: 'Mas Argentino que la sopa Paraguaya.',
+        imagenURL: 'https://github.com/Jor1968/Mercado_Michi-Nuevo-FRONTPARABACKEND/blob/main/Imagenes/GatoPaj.png',
+        precio: 100, 
+        stock: 50,
+        descripcion2: 'El mas criollo.',
+        descuento: 0  // Sin descuento
+    }
+
+
+]
+
+
 var verdadMostrada = false;
 
-var productos;
+let productos = [];
 
 
-var productos = fetchArticulos();
+fetchArticulos();
 
 
 console.log("a ver ahora");
@@ -24,7 +41,7 @@ console.log(productos);
 let htmlCode = "";
 
 
-productos.forEach(gatoIndividual => {
+productos2.forEach(gatoIndividual => {
   htmlCode =
     htmlCode +
     `
@@ -361,17 +378,14 @@ async function fetchArticulos(){
 
 
     try{
-        const response = await fetch('http://localhost:9090/api/Articulos')
-        .then(res => {productos = res.json()});
-
-
+        const response = await fetch('http://localhost:9090/api/Articulos');
+        const dato = await response.json();
         if(!response.ok){
             throw new Error("No se pudo hacer el fetch");
         }
-
+        dato.forEach((element) => (productos.push(element)));
         console.log(productos);
         console.log("HASTA ACA LLEGA");
-        return productos;
 
     }
     catch(error){
